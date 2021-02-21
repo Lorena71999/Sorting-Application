@@ -1,7 +1,5 @@
 
 public class Passenger implements Comparable<Passenger> {
-    String key;// f1 g1 s1 s2
-    Double value; //e price ul ala calculat din hashmap
 
     Passenger(String key, Double value) {
         this.key = key;
