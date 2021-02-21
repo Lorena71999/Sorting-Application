@@ -29,11 +29,10 @@ public class Test {
         }
 
 
-        Map<String, Double> hashmap = new HashMap<>();//aici calculez prioritatea pentru fiecare id
+        Map<String, Double> hashmap = new HashMap<>();
         for (Sorting person : personList) {
 
             String key = person.getId();
-           // int nr1 = 0, nr2 = 0;
             double price = hashmap.containsKey(key) ? hashmap.get(key) : 0;
             price += person.calculateTotalPoints(person.getAge(), person.getTicketType(), person.getPriority(), person.getSpecialNeed());
             hashmap.put(key, price);
@@ -48,7 +47,7 @@ public class Test {
 
         }
 
-        ArrayList<Passenger> pasageri = new ArrayList<>();//vector de pasageri
+        ArrayList<Passenger> pasageri = new ArrayList<>();
         for (String key1 : hashmap.keySet()) {
             pasageri.add(new Passenger(key1, hashmap.get(key1)));
 
