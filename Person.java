@@ -1,5 +1,5 @@
   public class Person {
-    // clasa persoana cu informatiile despre fiecare pasager
+    
        private  String id;
        private String name;
        private int age;
