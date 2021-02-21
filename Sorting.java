@@ -6,7 +6,7 @@
       }
 
      @Override
-      public int getPointsOnAge(int age){//functie pentru calcularea  punctelor in functie de varsta
+      public int getPointsOnAge(int age){
             int points = 0;
 
             if (getAge() < 2) {
@@ -30,7 +30,7 @@
 
 
       @Override
-      public int getPointsOnTicketType(String c){// functie pentru calcularea punctelor pe baza ticket ului
+      public int getPointsOnTicketType(String c){
             int points1 = 0;
 
             switch (c) {
@@ -52,7 +52,7 @@
      }
 
      @Override
-     public  int getPointsOnPriority(boolean boo){// calcul prioritate
+     public  int getPointsOnPriority(boolean boo){
          int points2 = 0 ;
 
          if(boo)
@@ -64,7 +64,7 @@
      }
 
      @Override
-     public int getPointsOnSpecialNeed(boolean boo1){// calcul nevoi speciale
+     public int getPointsOnSpecialNeed(boolean boo1){
         int points3 = 0;
 
         if(boo1)
