@@ -3,15 +3,18 @@ public class PriorityQueue<T extends Comparable<T>>{
 
       T[] arr;
       int N;
+      
    public PriorityQueue(){
       arr = (T[]) new Comparable[2];
       N = 0;
    }
+      
    public void insert(T t){
       if (N == arr.length - 1) resize(2*N + 1);
       arr[++N] = t;
       swim(N);
    }
+      
    public T embark() {
       if (isEmpty()) return null;
       T t = arr[1];
@@ -22,6 +25,7 @@ public class PriorityQueue<T extends Comparable<T>>{
       if (N == (arr.length -1)/4) resize((arr.length-1) / 2 + 1);
       return t;
    }
+      
    public String list(){
       StringBuffer sb = new StringBuffer();
       for(int i = 1; i <= N; i ++)
@@ -30,9 +34,11 @@ public class PriorityQueue<T extends Comparable<T>>{
       return sb.toString();
 
    }
+      
    private boolean isEmpty(){
       return N == 0;
    }
+      
    private void resize(int capacity){
       T[] copy = (T[]) new Comparable[capacity];
 
