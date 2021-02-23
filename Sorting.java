@@ -1,8 +1,8 @@
 
   public class Sorting extends Person  implements Methods{
 
-      Sorting(String id, String name, int age, String ticketType, boolean priority, boolean specialNeed) {
-         super(id, name, age, ticketType, priority, specialNeed);
+       public  Sorting(String id, String name, int age, String ticketType, boolean priority, boolean specialNeed) {
+                 super(id, name, age, ticketType, priority, specialNeed);
       }
 
      @Override
