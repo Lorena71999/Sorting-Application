@@ -30,7 +30,7 @@ public class Test {
 
 
         Map<String, Double> hashmap = new HashMap<>();
-        for (Sorting person : personList) {
+          for (Sorting person : personList) {
 
             String key = person.getId();
             double price = hashmap.containsKey(key) ? hashmap.get(key) : 0;
@@ -39,6 +39,7 @@ public class Test {
         }
 
         System.out.println("");
+        
         for (String key1 : hashmap.keySet()) {
             if (key1.startsWith("f"))
                 hashmap.replace(key1, hashmap.get(key1) + 10);
