@@ -1,0 +1,2 @@
+Pasager{key='g1', value=180.0} Pasager{key='s2', value=0.0} Pasager{key='s1', value=35.0} 
+Pasager{key='s1', value=35.0} Pasager{key='s2', value=0.0} 
