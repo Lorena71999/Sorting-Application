@@ -1,11 +1,18 @@
+package model;
 
-public class Passenger implements Comparable<Passenger> {
+public class Passenger implements Comparable<Passenger>{
 
-    Passenger(String key, Double value) {
+    private String key;
+    private Double value;
+
+    public Passenger(String key, Double value) {
         this.key = key;
         this.value = value;
     }
 
+    public String getKey() {
+        return key;
+    }
 
     @Override
     public String toString() {
@@ -15,6 +22,7 @@ public class Passenger implements Comparable<Passenger> {
                 '}';
     }
 
+    @Override
     public int compareTo(Passenger x) {
         if (this.value < x.value)
             return -1;

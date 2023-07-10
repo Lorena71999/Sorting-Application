@@ -1,15 +1,15 @@
- 
-   public abstract class Person {
-    
-       private  String id;
-       private String name;
-       private int age;
-       private String ticketType;
-       private boolean priority;
-       private boolean specialNeed;
-       public abstract int calculateTotalPoints(int age, String ticketType,boolean priority,boolean specialNeed);
+package model;
 
-    public Person(String id ,String name ,int age ,String ticketType ,boolean priority , boolean specialNeed ) {
+public class Person {
+
+    private final String id;
+    private final String name;
+    private final int age;
+    private final String ticketType;
+    private final boolean priority;
+    private final boolean specialNeed;
+
+    public Person(String id, String name, int age, String ticketType, boolean priority, boolean specialNeed) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -18,42 +18,39 @@
         this.specialNeed = specialNeed;
     }
 
-    public String getId(){
+    public String getId() {
         return id;
     }
 
-    public String getName(){
-      return name;
-
+    public String getName() {
+        return name;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public boolean getPriority(){
+    public boolean getPriority() {
         return priority;
     }
 
-    public boolean getSpecialNeed(){
+    public boolean getSpecialNeed() {
         return specialNeed;
     }
 
-    public String getTicketType(){
+    public String getTicketType() {
         return ticketType;
     }
 
     @Override
-    public String toString() { 
-        return "Person{" +
-                   "id='" + id + '\'' +
-                   ", name='" + name + '\'' +
-                   ", age=" + age +
-                   ", ticketType='" + ticketType + '\'' +
-                   ", priority=" + priority +
-                   ", specialNeed=" + specialNeed +
-                   '}';
+    public String toString() {
+        return "model.Person{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", ticketType='" + ticketType + '\'' +
+                ", priority=" + priority +
+                ", specialNeed=" + specialNeed +
+                '}';
     }
-
-  }
-
+}
